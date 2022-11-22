@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        <title>Y</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="./filter.js"></script>
+    </head>
+    <body>
+    <div class="header">
+        <div class="main">
+            <div class="navbar">
+                <div class="logo">
+                   <img src="D:\Nikith (Dell)\GITAM_4_2\AFRID WEBPAGE\DEVREV-main\DEVREV-main\DEVREV Afrid assement\pictures\book.jpg" width="125px">
+                </div>
+               <nav>
+                <div class="toggle" onclick="toggleMenu();">
+                   <ul>
+                      <li><a herf="#Main" class="btn0" onclick="toggleMenu();">Home</a></li>
+                      <li><a herf="#Authors" class="btn0" onclick="toggleMenu();">Authors</a></li>
+                      <li><a herf="#Books" class="btn0" onclick="toggleMenu();">Books</a></li>
+                      <li><a herf="#About" class="btn0" onclick="toggleMenu();">About</a></li>
+                      <li><a herf="#Contact" class="btn0" onclick="toggleMenu();">Contact</a></li>
+                   </ul>
+                </div>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-2" style="text-align:center;" >
+                    <h1 >Library-"Collection of knowledge"</h1>
+                    <h3 >""Nothing is pleasanter than exploring a library.""</h3>
+                    <div style="text-align:center;" >
+                    <a href="" class="btn" >Learn More</a>
+                    </div>
+                </div>
+                <div class="col-2" style="text-align:left">
+                    <img src="https://media.istockphoto.com/id/1085770318/photo/wooden-brown-books-shelves-with-a-lamp.jpg?s=612x612&w=0&k=20&c=lmEO_bnmL8uv2u-1OrSfDQ1lVkxGROJ3HzO-JjDu9c0=">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+        <div class="con">
+            <div class="small">
+                <h1 class="title">Authors On Demand</h1>
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="C:\Users\thiru\Downloads\jaysetty.jpg">
+                            <h4>Spiritual Almighty</h4>
+                            <p>Jay Setty</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="C:\Users\thiru\Downloads\gaur.jpg">
+                            <h4>Motivational Marathon</h4>
+                            <p>Gaur Gopal Das</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="C:\Users\thiru\Downloads\ankur.jpg">
+                            <h4>Trendy Hunk</h4>
+                            <p>Ankur Warikoo</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+        
+        <div class="book">
+            <h1 class="title">List of Books</h1>
+            
+        <div class="outer-wrapper">
+            <div class="table-wrapper">
+
+            <table id="emp-table">
+                <thead>
+                    <th col-index = 1>Title</th>
+                    <th col-index = 2>Author
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all"></option>
+                        </select>
+                    </th>
+        
+                    <th col-index = 3>Subject
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all"></option>
+                        </select>
+                    </th>
+                    <th col-index = 4>Publish Year
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all"></option>
+                        </select>
+                    </th>
+                  
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bad Investment</td>
+                        <td>Ankur Warikoo</td>
+                        <td>Love</td>
+                        <td>2015</td>
+                    </tr>
+                    <tr>
+                        <td>The Girl in Room 105</td>
+                        <td>Chetan Bhagat</td>
+                        <td>Thriller</td>
+                        <td>2018</td>
+                    </tr>
+                    <tr>
+                        <td>Revolution 2020</td>
+                        <td>Chetan Bhagat</td>
+                        <td>Mystery</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>The power of posssitive Thinking</td>
+                        <td>Sandeep Maheswari</td>
+                        <td>Thriller</td>
+                        <td>2020</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>400 Days</td>
+                        <td>Chetan Bhagat</td>
+                        <td>Mystery</td>
+                        <td>2015</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Way of Monk</td>
+                        <td>Gaur Gopal Das</td>
+                        <td>Love</td>
+                        <td>2020</td>
+                    
+                    </tr>
+                    <tr>
+                        <td>8Rules ofLove</td>
+                        <td>Jay Setty</td>
+                        <td>Thriller</td>
+                        <td>2018</td>
+                    
+                    </tr>
+                    <tr>
+                        <td>The Magic of Thinking Big</td>
+                        <td>Sadeep Maheswari</td>
+                        <td>Love</td>
+                        <td>2015</td>
+                    
+                    </tr>
+                    <tr>
+                        <td>Think Like a Monk</td>
+                        <td>Jay Setty</td>
+                        <td>Thriller</td>
+                        <td>2018</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>The Fountain Head</td>
+                        <td>Ankur Warikoo</td>
+                        <td>Love</td>
+                        <td>2015</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Life's Amazing Secrets</td>
+                        <td>Gaur Gopal Das</td>
+                        <td>Mystery</td>
+                        <td>2020</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Do Epic Shit</td>
+                        <td>Ankur Warikoo</td>
+                        <td>Love</td>
+                        <td>2018</td>
+                        
+                    </tr>
+                    
+        
+                </tbody>
+            </table>
+            <!-- <script>getUniqueValuesFromColumn()
+            </script> -->
+            <script>
+                window.onload = () => {
+                    console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+                };
+        
+                getUniqueValuesFromColumn()
+                
+            </script>
+
+
+        </div>
+        </div>
+    </div>
